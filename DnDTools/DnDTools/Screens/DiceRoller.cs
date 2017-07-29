@@ -71,7 +71,7 @@ namespace DnDTools.Screens
                 returnString += random.Next(1, sizeOfDice + 1).ToString() + ", ";
             }
 
-            return returnString.TrimEnd(','); ;
+            return SaveToLog(returnString.TrimEnd(',')); ;
         }
 
         private string RollTheDice(int num, int size)
@@ -84,7 +84,7 @@ namespace DnDTools.Screens
                 returnString += random.Next(1, size + 1).ToString() + ", ";
             }
 
-            return returnString.TrimEnd(',');
+            return SaveToLog(returnString.TrimEnd(','));
         }
 
         private string RollTheDice(string num, int size)
@@ -107,7 +107,13 @@ namespace DnDTools.Screens
                 returnString += random.Next(1, size +1).ToString() + ", ";
             }
 
-            return returnString.TrimEnd(','); ;
+            return SaveToLog(returnString.TrimEnd(',')); ;
+        }
+
+        private string SaveToLog(string stringToSave)
+        {
+            //DO THINGS WITH THIS STRING SAVING IT TO WHATEVER DB I DECIDE ON.
+            return stringToSave;
         }
     }
 }
