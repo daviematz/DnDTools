@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DnDTools.Static_Classes;
+using System;
 using System.Windows.Forms;
 
 namespace DnDTools
@@ -11,6 +12,7 @@ namespace DnDTools
         [STAThread]
         static void Main()
         {
+            new XMLEditor().InitializeFiles();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new OpeningScreen());

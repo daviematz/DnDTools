@@ -60,6 +60,7 @@
     </Compile>
     <Compile Include="Startup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Static Classes\XMLEditor.cs" />
     <EmbeddedResource Include="Screens\DiceRoller.resx">
       <DependentUpon>DiceRoller.cs</DependentUpon>
     </EmbeddedResource>
@@ -87,6 +88,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="XMLs\FolderSchema.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
