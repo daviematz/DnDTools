@@ -12,7 +12,8 @@ namespace DnDTools
         [STAThread]
         static void Main()
         {
-            new XMLEditor().InitializeFiles();
+            string containingFolderPath = Application.StartupPath;
+            XMLEditor.InitializeFiles(containingFolderPath);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new OpeningScreen());

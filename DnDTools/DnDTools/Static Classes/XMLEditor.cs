@@ -4,7 +4,7 @@ namespace DnDTools.Static_Classes
 {
     static class XMLEditor
     {
-        public static void InitializeFiles()
+        public static void InitializeFiles(string ContainingFolder)
         {
             // Temporarily borrowed from stack overflow so i can learn
             // HOW THE FREAKING HECK XML EDITING WORKS ASBDGUJBSRFKJGA
