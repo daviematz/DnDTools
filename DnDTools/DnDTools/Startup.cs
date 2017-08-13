@@ -13,7 +13,7 @@ namespace DnDTools
         static void Main()
         {
             string containingFolderPath = Application.StartupPath;
-            XMLEditor.InitializeFiles(containingFolderPath);
+           // XMLEditor.InitializeFiles(containingFolderPath);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new OpeningScreen());

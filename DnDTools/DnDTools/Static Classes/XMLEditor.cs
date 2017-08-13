@@ -24,11 +24,12 @@ namespace DnDTools.Static_Classes
 
             // get a list of nodes - in this case, I'm selecting all <AID> nodes under
             // the <GroupAIDs> node - change to suit your needs
-            XmlNodeList nodes = doc.SelectNodes("/Equipment/DataCollections/GroupAIDs/AID");
+            XmlNodeList nodes = doc.SelectNodes("//FolderInfo//DiceFolderInfo");
 
             // loop through all AID nodes
             foreach (XmlNode node in nodes)
             {
+                
                 // grab the "id" attribute
                 XmlAttribute idAttribute = node.Attributes["id"];
 
